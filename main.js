@@ -57,7 +57,7 @@ function fixCar(car){
 }
 
 function addGrades(student, newGrades){
-    for(let i = 0; i <= newGrades.length; i++){
+    for(let i = 0; i < newGrades.length; i++){
         student.grades.push(newGrades[i])
     }
     return student
@@ -77,7 +77,7 @@ function addTodo(todos, newTodo){
 
 function addSong(playlist, newSong){
     playlist.duration = playlist.duration + newSong.duration
-    playlist.push(newSong)
+    playlist.songs.push(newSong)
     return playlist
 }
 
